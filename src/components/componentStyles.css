@@ -1,0 +1,189 @@
+body{
+    background-color: rgba(0, 0, 0, 0.986);
+}
+.navbar-brand{
+    font-style: italic;
+    font-weight: 500;
+}
+.navbarContainer{
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.986) !important;
+       
+}
+.disappearNavbar{
+    animation: fadeOut;
+    -webkit-animation-duration: 1s;animation-duration: 1s;
+    -webkit-animation-fill-mode: both;animation-fill-mode: both;
+}
+.nav-link{
+    color: rgba(255,255,255,.55) !important;
+    padding-left: 0px;
+    margin-right: 25px;
+}
+
+.movieList{
+    display: flex;
+    flex-direction: row;
+    text-align: center;  
+}
+.carousel-control-prev{
+    width: 2%;
+}
+
+.carousel-control-next{
+    width: 2%;
+}
+.carousel-control-next-icon{
+    width: 100px;
+}
+/* .carousel-control-next-icon{
+    
+} */
+
+
+#carouselMovieList{
+    justify-content: center;
+}
+
+.carousel-indicators{
+    bottom: -20px;
+}
+
+/* .contentListContainer{
+    opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;
+} */
+
+.loadingButton{
+    text-align: center;
+    margin-top: 20px;
+}
+.title{
+    font-size: 14px;
+    font-weight: 500;
+    color: #EDF5E1;
+}
+.movieDescription{
+    font-size: 13px;
+}
+.responsiveNavbar{
+    background-color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+.welcomeDiv{
+    /* background-image: url("https://p4.wallpaperbetter.com/wallpaper/87/321/189/movie-scenes-joker-2019-movie-hd-wallpaper-preview.jpg"); */
+    background-image: url("https://www.upload.ee/image/14124162/617286__1_.jpg");
+    background-size: cover;
+
+}
+
+.welcomeMessage{
+    padding-top: 110px;
+    font-weight: 700;
+    font-size: 30px;
+    color: #e8c3aa;
+}
+.searchInput{
+    width: 95%;
+    
+    border: 3px solid #00B4CC;
+    border-right: none;
+    padding: 5px;
+    height: 50px;
+    border-radius: 20px;
+    outline: none;
+    color: #262a26;
+    font-weight: 500;
+}
+
+
+/* Navbar Media query */
+
+@media only screen and (min-width: 991px) {
+    #navbarText{
+        position: absolute; 
+        right: 150px;
+    }
+    
+  }
+  @media only screen and (max-width: 873px) {
+    .movieCard{
+        width: 33%;
+    }
+    
+  }
+
+  @media only screen and (max-width: 960px) {
+    
+    .carouselMovieCard{
+        width: 25%;
+    }
+  }
+
+
+  @media only screen and (max-width: 665px) {
+    .movieCard{
+        width: 50%;
+    }
+    .carouselMovieCard{
+        width: 33%;
+    }
+  }
+  @media only screen and (max-width: 428px) {
+    .movieCard{
+        width: 100%;
+    }
+    .carouselMovieCard{
+        width: 50%;
+    }
+    
+  }
+/* Animations */
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;} 
+ } 
+
+
+.css-g2z002-MuiSvgIcon-root-MuiPaginationItem-icon {
+    z-index: 3;
+    color: #fff !important;
+
+  }
+
+  .css-1omp2b7{
+    color: #fff !important;
+
+  }
+  .css-1to7aaw-MuiButtonBase-root-MuiPaginationItem-root{
+    color: #fff !important;
+
+  }
+  .css-1v2lvtn-MuiPaginationItem-root{
+    color: #fff !important;
+
+  }
+.paginationContainer{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    z-index: 3;
+    color: #fff !important;
+    display: flex;
+    align-items: center;
+    position: static;
+}  

@@ -1,0 +1,138 @@
+.errorMessage{
+  color: rgb(255, 85, 85);
+}
+
+.movieDescription{
+    color: rgba(255, 255, 255, 0.789);
+}
+.genreSpan{
+    margin-right: 20px;
+}
+.tagline{
+    font-size: 20px;
+    font-weight: 500;
+    color: gray;
+}
+.movieDetailContainer{
+    color: white !important;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .castCard{
+        width: 20%;
+    }
+    
+  }
+
+  @media only screen and (max-width: 886px) {
+    .castCard{
+        width: 25%;
+    }
+    .movieDescription{
+        width: 100%;
+    }
+    .movieDetailIMG{
+        width: 30%;
+
+    }
+    
+  }
+
+  @media only screen and (max-width: 711px) {
+    .castCard{
+        width: 30%;
+    }
+    .movieDetailIMG{
+        width: 38%;
+
+    }
+    
+  }
+  @media only screen and (max-width: 584px) {
+    .castCard{
+        width: 33%;
+    }
+    
+  }
+  @media only screen and (max-width: 513px) {
+    .castCard{
+        width: 50%;
+    }
+    .movieDetailIMG{
+        width: 60%;
+
+    }
+    
+  }
+  @media only screen and (max-width: 354px) {
+    .castCard{
+        width: 100%;
+    }
+    .movieDetailIMG{
+        width: 80%;
+
+    }
+    
+  }
+
+
+/* CSS */
+.viewMoreButton {
+
+  align-items: center;
+  background-color: #FFFFFF !important;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85) !important;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+  height: 20px;
+  top: 100px;  
+  left: 50px;
+}
+
+.viewMoreButtonContainer{
+    display: inline !important;
+}
+
+.viewMoreButton:hover,
+.viewMoreButton:focus {
+  border-color: rgba(0, 0, 0, 0.15) !important;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px !important;
+  color: rgba(0, 0, 0, 0.65) !important;
+}
+.btn-primary:focus{
+    border-color: rgba(0, 0, 0, 0.15) !important;
+
+}
+
+.viewMoreButton:hover {
+  transform: translateY(-1px);
+}
+
+.viewMoreButton:active {
+  background-color: #F0F0F1 !important;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
