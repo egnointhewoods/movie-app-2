@@ -1,38 +1,33 @@
-import * as React from 'react';
-import Navbar from './components/Navbar';
-import { useState, useEffect } from 'react';
+import * as React from "react";
+import Navbar from "./components/Layout/Navbar";
+import { useState, useEffect } from "react";
 
- 
-import './App.css'
-import LoadingScreen from './components/LoadingScreen';
-import { BrowserRouter as Router } from 'react-router-dom';
+import "./App.css";
+import LoadingScreen from "./components/LoadingScreen";
+import { BrowserRouter as Router } from "react-router-dom";
 
-import AnimatedRoutes from './components/AnimatedRoutes';
+import AnimatedRoutes from "./components/AnimatedRoutes";
 
 function App() {
-
   const [isPageLoaded, pageLoaded] = useState(false);
 
-  useEffect(() => pageLoaded(true) , []);
+  useEffect(() => pageLoaded(true), []);
 
-     
-  
-  
-  if(!isPageLoaded){
-    return(
+  if (!isPageLoaded) {
+    return (
       <div>
         <LoadingScreen />
       </div>
-    )
+    );
   } else
-  return(
-    <Router>
-      <div>
-        <Navbar />
-        <AnimatedRoutes />
-      </div>
-    </Router>
-  )
+    return (
+      <Router>
+        <div>
+          <Navbar />
+          <AnimatedRoutes />
+        </div>
+      </Router>
+    );
 }
 
 export default App;
