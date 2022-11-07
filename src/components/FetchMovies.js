@@ -4,6 +4,8 @@ import Tooltip from "@mui/material/Tooltip";
 import IconButton from "@mui/material/IconButton";
 import LoadingScreen from "./LoadingScreen";
 import Carousel from "react-bootstrap/Carousel";
+import Slider from "react-slick";
+
 
 function TrendingMovies({
   onClickFunction,
@@ -13,6 +15,42 @@ function TrendingMovies({
   isTrendingMovie,
   isLatestMovies,
 }) {
+
+  var settings = {
+    dots: true,
+    infinite: false,
+    speed: 1000,
+    slidesToShow: 5.5,
+    slidesToScroll: 5.5,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3.5,
+          slidesToScroll: 3.5,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1.5,
+          slidesToScroll: 1.5,
+          initialSlide: 1.5
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
+ 
   const [movieData, setMovieData] = useState("");
   const [secondMovieData, setSecondMovieData] = useState("");
 
@@ -85,10 +123,10 @@ function TrendingMovies({
     return movies;
   };
 
-  let fiveMovies = (count) => {
+  let getMovies = (count) => {
     let movies = [];
 
-    for (let i = count; i < count + 5; i++) {
+    for (let i = 0; i < count; i++) {
       let movie = movieData.results[i];
       movies.push(
         <div
@@ -179,24 +217,13 @@ function TrendingMovies({
 
   if (movieData && isTrendingMovie === true) {
     return (
-      <div>
-        <Carousel>
-          <Carousel.Item>
-            <div className="movieList row" id="carouselMovieList">
-              {fiveMovies(0)}
-            </div>
-          </Carousel.Item>
-          <Carousel.Item>
-            <div className="movieList row" id="carouselMovieList">
-              {fiveMovies(5)}
-            </div>
-          </Carousel.Item>
-          <Carousel.Item>
-            <div className="movieList row" id="carouselMovieList">
-              {fiveMovies(10)}
-            </div>
-          </Carousel.Item>
-        </Carousel>
+      <div className="carouselWrapper">
+        <Slider {...settings} infinite={true} initialSlide={0.5}>
+          {getMovies(20).map((movie)=>{
+            console.log(movie);
+            return(movie)
+          })}
+        </Slider>
       </div>
     );
   } else if (secondMovieData && isLatestMovies) {

@@ -1,10 +1,14 @@
-import { ScrollingCarousel } from "@trendyol-js/react-carousel";
 import { useEffect } from "react";
-import useFetch from "../Hooks/useFetch";
+import { useNavigate } from "react-router-dom";
+
+import useFetch from "../../Hooks/useFetch";
 
 export default function ImageSlider() {
+  let search = window.location.search;
+  let params = new URLSearchParams(search);
+  let navigate = useNavigate();
   function getDetails(movieID) {
-    routeChange(`/moviedetails?details=${movieID}`);
+    navigate(`/moviedetails?details=${movieID}`);
   }
   const {
     error,
@@ -17,26 +21,7 @@ export default function ImageSlider() {
     console.log(headerMovies);
     return (
       <>
-        <ScrollingCarousel show={3.5} slide={2} transition={0.5} swiping={true}>
-          {headerMovie.map((movie) => {
-            {
-              return (
-                <div
-                  onClick={() => getDetails(movie.id)}
-                  key={movie.id}
-                  className="movieWrapper"
-                >
-                  <Item
-                    description={movie.description}
-                    imgSrc={movie.imgSrc}
-                    tags={movie.tags}
-                    subject={movie.subject}
-                  />
-                </div>
-              );
-            }
-          })}
-        </ScrollingCarousel>
+               
       </>
     );
   }

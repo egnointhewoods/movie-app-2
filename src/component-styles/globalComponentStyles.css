@@ -26,10 +26,33 @@ body {
 .routeWrapper {
   padding: 0px 50px;
 }
+
 .movieList {
   display: flex;
   flex-direction: row;
   text-align: center;
+  flex-wrap: nowrap !important; 
+}
+/* .carouselWrapper{
+  width: 1400px;
+}
+.slick-slider{
+  box-shadow: inset 0px 0px 30px 30px rgba(0,0,0,0.6);
+  background-color: red;
+} */
+.slick-next{
+  box-shadow: 0px 10px 30px 30px rgb(0 0 0);
+  z-index: 20;
+}
+.slick-arrow{
+  height: 100%;
+}
+
+.carouselMovieCard, .carouselMovieCard img{
+  width: 200px !important;
+}
+.carouselMovieCard{
+  padding: 0px 20px;
 }
 .carousel-control-prev {
   width: 2%;
@@ -109,7 +132,7 @@ body {
     right: 150px;
   }
 }
-@media only screen and (max-width: 873px) {
+/* @media only screen and (max-width: 873px) {
   .movieCard {
     width: 33%;
   }
@@ -119,9 +142,9 @@ body {
   .carouselMovieCard {
     width: 25%;
   }
-}
+} */
 
-@media only screen and (max-width: 665px) {
+/* @media only screen and (max-width: 665px) {
   .movieCard {
     width: 50%;
   }
@@ -136,7 +159,7 @@ body {
   .carouselMovieCard {
     width: 50%;
   }
-}
+} */
 /* Animations */
 
 @keyframes fadeInOpacity {
