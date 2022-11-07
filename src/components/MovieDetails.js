@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './movieDetailsStyles.css';
+import '../component-styles/movieDetails.css'
 import Tooltip from '@mui/material/Tooltip';
 import IconButton from '@mui/material/IconButton';
 import LoadingScreen from './LoadingScreen';

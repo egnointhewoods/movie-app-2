@@ -66,7 +66,7 @@ function AnimatedRoutes() {
 
 
   return (
-      <div>
+      <div class="routeWrapper">
           <WelcomeSearch onSearch = {(e)=> submitFunction(e)} />
           <AnimatePresence exitBeforeEnter>
         <Routes location={location} key = {location.pathname}>

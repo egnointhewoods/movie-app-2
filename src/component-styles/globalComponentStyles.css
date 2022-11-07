@@ -22,7 +22,9 @@ body{
     padding-left: 0px;
     margin-right: 25px;
 }
-
+.routeWrapper{
+    padding: 0px 50px;
+}
 .movieList{
     display: flex;
     flex-direction: row;

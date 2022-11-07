@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import './componentStyles.css'
+import '../component-styles/globalComponentStyles.css'
 import Tooltip from '@mui/material/Tooltip';
 import IconButton from '@mui/material/IconButton';
 import LoadingScreen from './LoadingScreen'

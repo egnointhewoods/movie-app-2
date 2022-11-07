@@ -1,6 +1,6 @@
 import React from 'react'
 import CircularProgress from '@mui/material/CircularProgress';
-import './componentStyles.css';
+import '../component-styles/globalComponentStyles.css'
 
 
 
