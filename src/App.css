@@ -1,6 +1,9 @@
 .profileToolTip{
   display: flex;
 }
+#root{
+  background: #201c1c;
+}
 
 .profilePicture{
   max-width: 110px;

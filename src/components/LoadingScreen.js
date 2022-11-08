@@ -9,7 +9,7 @@ function LoadingScreen() {
     <div className='loadingButton container-lg'>
 
 
-        <CircularProgress />
+        {/* <CircularProgress /> */}
 
 
 

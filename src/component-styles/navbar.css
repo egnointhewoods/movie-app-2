@@ -20,7 +20,8 @@ width:250px;
 }
 
 .main-menu {
-background: black;
+background: #201c1c;
+box-shadow: 10px -25px 10px -2px #201c1c;
 position:fixed;
 top:0;
 bottom:0;

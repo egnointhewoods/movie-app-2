@@ -5,7 +5,7 @@ function WelcomeSearch({ onSearch }) {
   return (
     <div className="welcomeDiv">
       <ImageSlider />
-      <div className="container-lg">
+      <div className="container-lg searchBar">
         <form action="/search" onSubmit={(e) => onSearch(e)}>
           <input
             className="searchInput"

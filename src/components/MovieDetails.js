@@ -51,7 +51,7 @@ function MovieDetails() {
                     <div className='col-2 castCard'>
                 <Tooltip title={
                     <div>
-                    <h6> {person.character}</h6>
+                    <h6> {person?.character}</h6>
                     </div>
                 } arrow>
                 <IconButton>
