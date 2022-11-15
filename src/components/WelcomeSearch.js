@@ -5,7 +5,7 @@ function WelcomeSearch({ onSearch }) {
   return (
     <div className="welcomeDiv">
       <ImageSlider />
-      <div className="container-lg searchBar">
+      {/* <div className="container-lg searchBar">
         <form action="/search" onSubmit={(e) => onSearch(e)}>
           <input
             className="searchInput"
@@ -14,7 +14,7 @@ function WelcomeSearch({ onSearch }) {
             placeholder="Search for a movie, tv show, person..."
           />
         </form>
-      </div>
+      </div> */}
     </div>
   );
 }

@@ -68,7 +68,7 @@ function AnimatedRoutes() {
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
               >
-                <div className="container-lg contentListContainer">
+                <div className="contentListContainer">
                   <div style={{ marginTop: "50px" }}>
                     <div style={{ textAlign: "start" }}>
                       <h4 style={{ color: "white" }}>What's trending</h4>

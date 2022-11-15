@@ -55,10 +55,11 @@ function MovieDetails() {
                     </div>
                 } arrow>
                 <IconButton>
-                    <img src={ !person.profile_path? 'https://www.upload.ee/image/14132287/profile-icon-png-893__1_.png':  `https://image.tmdb.org/t/p/w200/${person.profile_path}`} alt="" style={{maxWidth: "150px"}}/>
+                    {console.log(person)}
+                    <img src={ !person?.profile_path? 'https://www.upload.ee/image/14132287/profile-icon-png-893__1_.png' :  `https://image.tmdb.org/t/p/w200/${person?.profile_path}`} alt="" style={{maxWidth: "150px"}}/>
                 </IconButton>
                 </Tooltip>
-                <p>{person.name || person.original_name}</p>
+                <p>{person?.name || person?.original_name}</p>
                 
             </div>
                 )
@@ -95,10 +96,10 @@ function MovieDetails() {
                         </div>
                     } arrow>
                     <IconButton>
-                        <img src={ !person.profile_path? 'https://www.upload.ee/image/14132287/profile-icon-png-893__1_.png':  `https://image.tmdb.org/t/p/w200/${person.profile_path}`} alt="" style={{maxWidth: "150px"}}/>
+                        <img src={ !person?.profile_path? 'https://www.upload.ee/image/14132287/profile-icon-png-893__1_.png':  `https://image.tmdb.org/t/p/w200/${person?.profile_path}`} alt="" style={{maxWidth: "150px"}}/>
                     </IconButton>
                     </Tooltip>
-                    <p>{person.name || person.original_name}</p>
+                    <p>{person?.name || person?.original_name}</p>
                     
                 </div>
                 )
